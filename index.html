@@ -1,15 +1,18 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#7a321f">
+
   <title>Pooja's Soft Chapatis | Homemade Food</title>
+
   <meta name="description" content="Enjoy soft homemade chapatis, fresh sabzi and delicious Indian meals from Pooja's Soft Chapatis. Contact us to order.">
 
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
@@ -36,7 +39,9 @@
       font-size: 29px;
     }
 
-    header p { margin: 5px 0; }
+    header p {
+      margin: 5px 0;
+    }
 
     nav {
       background: #f0d8a8;
@@ -44,13 +49,14 @@
       padding: 13px 5px;
       position: sticky;
       top: 0;
+      z-index: 10;
     }
 
     nav a {
       color: #63301d;
       text-decoration: none;
       font-weight: bold;
-      margin: 0 10px;
+      margin: 0 8px;
       font-size: 14px;
     }
 
@@ -90,7 +96,9 @@
       color: white;
     }
 
-    section { padding: 28px 16px; }
+    section {
+      padding: 28px 16px;
+    }
 
     .section-title {
       text-align: center;
@@ -168,11 +176,29 @@
       font-size: 14px;
     }
 
-    footer p { margin: 5px; }
+    footer p {
+      margin: 5px;
+    }
+
+    @media (max-width: 400px) {
+      header h1 {
+        font-size: 25px;
+      }
+
+      .hero h2 {
+        font-size: 28px;
+      }
+
+      nav a {
+        margin: 0 5px;
+        font-size: 12px;
+      }
+    }
   </style>
 </head>
 
 <body>
+
   <header>
     <div class="logo">🫓</div>
     <h1>Pooja's Soft Chapatis</h1>
@@ -188,26 +214,36 @@
   </nav>
 
   <main>
+
     <section class="hero" id="home">
       <h2>A Taste of Home<br>in Every Bite!</h2>
+
       <p>
         Enjoy soft chapatis, tasty sabzi and homemade
         meals prepared with care for you and your family.
       </p>
-      <a class="button primary" href="#menu">Explore Our Menu</a>
+
+      <a class="button primary" href="#menu">
+        Explore Our Menu
+      </a>
+
       <a class="button whatsapp"
-         href="https://wa.me/8369610975">
+         href="https://wa.me/918369610975"
+         target="_blank"
+         rel="noopener noreferrer">
         Order on WhatsApp
       </a>
     </section>
 
     <section id="menu">
       <h2 class="section-title">Our Homemade Menu 🍽️</h2>
+
       <p class="intro">
         Simple, comforting Indian food for your everyday meals.
       </p>
 
       <div class="menu">
+
         <article class="food-card">
           <div class="food-icon">🫓</div>
           <h3>Soft Chapatis</h3>
@@ -231,6 +267,7 @@
           <p class="price">₹120</p>
           <p class="note">Sample price per meal</p>
         </article>
+
       </div>
 
       <p class="intro" style="margin-top:22px">
@@ -240,6 +277,7 @@
 
     <section class="about" id="about">
       <h2 class="section-title">Made with Love ❤️</h2>
+
       <p>
         Welcome to Pooja's Soft Chapatis! We believe that
         homemade food brings happiness to every family.
@@ -250,21 +288,23 @@
 
     <section class="contact" id="contact">
       <h2 class="section-title">Place Your Order</h2>
+
       <p>Call or WhatsApp us to enquire and place an order.</p>
 
-      <a class="button primary" href="tel:+91 8369610975">
+      <a class="button primary"
+         href="tel:+918369610975">
         📞 Call Us
       </a>
 
       <a class="button whatsapp"
-         href="https://wa.me/918369610975">
+         href="https://wa.me/918369610975"
+         target="_blank"
+         rel="noopener noreferrer">
         💬 WhatsApp Us
       </a>
 
-      <p class="note">
-        Please replace 8369610975 with your business phone number.
-      </p>
     </section>
+
   </main>
 
   <footer>
@@ -272,6 +312,6 @@
     <p>Homemade food, made with love. ❤️</p>
     <p>© 2026 Pooja's Soft Chapatis</p>
   </footer>
+
 </body>
-  </html>
-  
+</html>
