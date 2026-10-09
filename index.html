@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pooja's Soft Chapatis</title>
+  <meta name="theme-color" content="#783821">
+  <title>Pooja's Soft Chapatis | Homemade Food</title>
+  <meta name="description" content="Order homemade soft chapatis, chicken thali, fresh sabzi and rice plates from Pooja's Soft Chapatis.">
 
   <style>
     * {
@@ -14,97 +16,182 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #fff8ef;
-      color: #333;
+      background: #fffaf0;
+      color: #3c291c;
+      line-height: 1.6;
     }
 
     header {
-      background: #8b3a16;
-      color: white;
+      background: #783821;
+      color: #fff8e9;
       text-align: center;
-      padding: 30px 15px;
+      padding: 28px 15px;
+    }
+
+    .logo {
+      font-size: 46px;
+      margin: 0;
     }
 
     header h1 {
-      margin: 0 0 10px;
-      font-size: 30px;
+      margin: 5px 0;
+      font-size: 29px;
     }
 
     header p {
-      margin: 0;
-      font-size: 16px;
+      margin: 5px 0;
     }
 
-    .welcome {
+    nav {
+      background: #f0d8a8;
       text-align: center;
-      padding: 25px 15px 10px;
+      padding: 13px 5px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
 
-    .welcome h2 {
-      color: #8b3a16;
+    nav a {
+      color: #63301d;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 8px;
+      font-size: 14px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 45px 18px;
+      background: #f9e8c7;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      line-height: 1.25;
+      margin: 0 0 12px;
+    }
+
+    .hero p {
+      max-width: 440px;
+      margin: 0 auto 20px;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      margin: 5px;
+      font-weight: bold;
+    }
+
+    .primary {
+      background: #783821;
+      color: white;
+    }
+
+    .whatsapp {
+      background: #16834a;
+      color: white;
+    }
+
+    section {
+      padding: 28px 16px;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #783821;
+      font-size: 26px;
+      margin: 0 0 8px;
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 550px;
+      margin: 0 auto 20px;
     }
 
     .menu {
-      max-width: 700px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+      gap: 15px;
+      max-width: 900px;
       margin: auto;
-      padding: 15px;
     }
 
-    .menu-item {
+    .food-card {
       background: white;
-      border-radius: 12px;
-      padding: 20px;
-      margin-bottom: 15px;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-      border-left: 5px solid #e89a35;
+      text-align: center;
+      border: 1px solid #ead8b9;
+      border-radius: 14px;
+      padding: 18px 10px;
+      box-shadow: 0 3px 9px #6a3b1910;
     }
 
-    .menu-item h3 {
-      color: #8b3a16;
-      margin: 0 0 8px;
-      font-size: 21px;
+    .food-icon {
+      font-size: 53px;
+      background: #fff1d6;
+      border-radius: 12px;
+      padding: 10px;
+    }
+
+    .food-card h3 {
+      margin: 10px 0 2px;
+      font-size: 18px;
     }
 
     .price {
-      color: #287a35;
-      font-size: 19px;
+      color: #783821;
       font-weight: bold;
-      margin: 0;
+      font-size: 22px;
+      margin: 5px 0;
+    }
+
+    .note {
+      font-size: 12px;
+      color: #725f50;
+    }
+
+    .about {
+      background: #f5e5ca;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 570px;
+      margin: 10px auto;
     }
 
     .contact {
       text-align: center;
-      padding: 25px 15px 35px;
-    }
-
-    .contact h2 {
-      color: #8b3a16;
-    }
-
-    .contact a {
-      display: inline-block;
-      text-decoration: none;
-      color: white;
-      padding: 13px 22px;
-      margin: 7px;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-
-    .call-button {
-      background: #8b3a16;
-    }
-
-    .whatsapp-button {
-      background: #25d366;
     }
 
     footer {
-      background: #57240f;
-      color: white;
+      background: #452719;
+      color: #fff8e9;
       text-align: center;
-      padding: 15px;
+      padding: 22px 12px;
       font-size: 14px;
+    }
+
+    footer p {
+      margin: 5px;
+    }
+
+    @media (max-width: 400px) {
+      header h1 {
+        font-size: 25px;
+      }
+
+      .hero h2 {
+        font-size: 28px;
+      }
+
+      nav a {
+        margin: 0 5px;
+        font-size: 12px;
+      }
     }
   </style>
 </head>
@@ -112,60 +199,127 @@
 <body>
 
   <header>
+    <div class="logo">🫓</div>
     <h1>Pooja's Soft Chapatis</h1>
-    <p>Homemade Food Made with Love ❤️</p>
+    <p>Homemade with Love ❤️</p>
+    <p>Fresh • Soft • Delicious</p>
   </header>
 
-  <section class="welcome">
-    <h2>Welcome to Our Kitchen!</h2>
-    <p>Fresh, tasty and homemade food at affordable prices.</p>
-  </section>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Our Menu</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Order</a>
+  </nav>
 
-  <section class="menu">
-    <h2 style="text-align:center; color:#8b3a16;">Our Menu 🍽️</h2>
+  <main>
 
-    <div class="menu-item">
-      <h3>Soft Chapati</h3>
-      <p class="price">₹8 per chapati</p>
-    </div>
+    <section class="hero" id="home">
+      <h2>A Taste of Home<br>in Every Bite!</h2>
 
-    <div class="menu-item">
-      <h3>Chicken Thali</h3>
-      <p class="price">₹250 per plate</p>
-    </div>
+      <p>
+        Enjoy soft homemade chapatis, delicious chicken thali,
+        tasty homemade sabzi and rice plates prepared with care.
+      </p>
 
-    <div class="menu-item">
-      <h3>Sabzi</h3>
-      <p class="price">₹60 per plate</p>
-    </div>
+      <a class="button primary" href="#menu">
+        Explore Our Menu
+      </a>
 
-    <div class="menu-item">
-      <h3>Rice Plate 🍚</h3>
-      <p class="price">₹120 per plate</p>
-    </div>
+      <a class="button whatsapp"
+         href="https://wa.me/918369610975"
+         target="_blank"
+         rel="noopener noreferrer">
+        Order on WhatsApp
+      </a>
+    </section>
 
-  </section>
+    <section id="menu">
+      <h2 class="section-title">Our Homemade Menu 🍽️</h2>
 
-  <section class="contact">
-    <h2>Order Your Food Today!</h2>
-    <p>Contact us to place your order.</p>
+      <p class="intro">
+        Fresh and tasty food for your everyday meals.
+        Contact us to place your order!
+      </p>
 
-    <a class="call-button" href="tel:+918369610975">
-      📞 Call Us
-    </a>
+      <div class="menu">
 
-    <a class="whatsapp-button"
-       href="https://wa.me/918369610975"
-       target="_blank"
-       rel="noopener">
-      💬 Order on WhatsApp
-    </a>
+        <article class="food-card">
+          <div class="food-icon">🫓</div>
+          <h3>Soft Chapati</h3>
+          <p>Fresh homemade chapati</p>
+          <p class="price">₹8</p>
+          <p class="note">Per chapati</p>
+        </article>
 
-    <p>Phone: +91 83696 10975</p>
-  </section>
+        <article class="food-card">
+          <div class="food-icon">🍗</div>
+          <h3>Chicken Thali</h3>
+          <p>Delicious chicken meal</p>
+          <p class="price">₹250</p>
+          <p class="note">Per plate</p>
+        </article>
+
+        <article class="food-card">
+          <div class="food-icon">🥘</div>
+          <h3>Sabzi</h3>
+          <p>Homestyle vegetable curry</p>
+          <p class="price">₹60</p>
+          <p class="note">Per plate</p>
+        </article>
+
+        <article class="food-card">
+          <div class="food-icon">🍚</div>
+          <h3>Rice Plate</h3>
+          <p>Freshly prepared rice</p>
+          <p class="price">₹120</p>
+          <p class="note">Per plate</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2 class="section-title">Made with Love ❤️</h2>
+
+      <p>
+        Welcome to Pooja's Soft Chapatis!
+        We prepare comforting homemade food with care
+        to bring a taste of home to every meal.
+      </p>
+
+      <p>
+        Order soft chapatis, a delicious chicken thali,
+        fresh sabzi or a rice plate for your meal.
+      </p>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="section-title">Place Your Order</h2>
+
+      <p>
+        Call or WhatsApp us to order and confirm availability.
+      </p>
+
+      <a class="button primary"
+         href="tel:+918369610975">
+        📞 Call Us
+      </a>
+
+      <a class="button whatsapp"
+         href="https://wa.me/918369610975"
+         target="_blank"
+         rel="noopener noreferrer">
+        💬 WhatsApp Us
+      </a>
+    </section>
+
+  </main>
 
   <footer>
-    <p>© 2026 Pooja's Soft Chapatis. Made with ❤️</p>
+    <p><strong>Pooja's Soft Chapatis</strong></p>
+    <p>Homemade food, made with love. ❤️</p>
+    <p>© 2026 Pooja's Soft Chapatis</p>
   </footer>
 
 </body>
